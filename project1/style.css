@@ -1,0 +1,133 @@
+/* Import Google Fonts - Poppins with all weights and styles, and Sixtyfour Convergence */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sixtyfour+Convergence&display=swap');
+
+/* Global Reset - applies to all elements */
+* {
+    margin: 0;          /* Remove default margins */
+    padding: 0;         /* Remove default padding */
+    box-sizing: border-box;  /* Include padding and border in element's total width and height */
+    font-family: "Poppins", sans-serif;  /* Set default font for all elements */
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    display: flex;                  /* Enable flexbox layout */
+    justify-content: space-between; /* Spread items across the container */
+    align-items: center;           /* Center items vertically */
+    padding: 1rem 2rem;            /* Add padding: top/bottom left/right */
+    margin: 0 2%;                  /* Center navbar with 2% margin on sides */
+    position: fixed;               /* Fix navbar position on screen */
+    width: 96%;                    /* Width with respect to margins */
+    top: 35px;                     /* Initial position from top */
+    transition: top 0.3s ease-in-out; /* Smooth transition for scroll effect */
+    background: white;             /* White background for navbar */
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 22px;
+    font-weight: 500;              /* Medium font weight */
+}
+
+/* Navigation Links Container */
+.nav-links {
+    display: flex;                 /* Enable flexbox for links */
+    list-style: none;             /* Remove bullet points */
+    gap: 2rem;                    /* Space between nav items */
+    margin: 0;
+}
+
+/* Individual Navigation Link Styling */
+.nav-links li a {
+    text-decoration: none;        /* Remove underline from links */
+    color: #000;                  /* Black text color */
+    font-size: 19px;
+    font-weight: 500;             /* Medium font weight */
+    transition: color 0.3s ease;  /* Smooth color transition on hover */
+}
+
+/* Navigation Link Hover Effect */
+.nav-links li a:hover {
+    color: #333;                  /* Lighter black on hover */
+}
+
+/* Authentication Buttons Container */
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;                  /* Space between sign-in and sign-up buttons */
+}
+
+/* Sign In Button Styling */
+.sign-in {
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;              /* Hand cursor on hover */
+}
+
+/* Sign Up Button Styling */
+.sign-up {
+    padding: 0.8rem 1.5rem;
+    background: #000;
+    color: #fff;                  /* White text */
+    border: none;
+    border-radius: 14px;          /* Rounded corners */
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Sign Up Button Hover Effect */
+.sign-up:hover {
+    background-color: #333;       /* Lighter black on hover */
+}
+
+/* Main Content Container */
+.content {
+    padding-top: 120px;          /* Space for fixed navbar */
+    text-align: center;
+}
+
+/* Image Styling */
+img {
+    width: 40%;                  /* Image width relative to container */
+    margin: 2rem auto;           /* Center image with margin */
+    display: block;              /* Remove inline behavior */
+}
+
+/* Main Heading Styling */
+h1 {
+    font-family: "Coustard", serif;  /* Special font for headings */
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/* Paragraph Text Styling */
+p {
+    font-size: 18px;
+    line-height: 1.5;            /* Space between lines */
+    margin-bottom: 0.5rem;
+}
+
+/* Homepage Button Styling */
+.home-button {
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Homepage Button Hover Effect */
+.home-button:hover {
+    background-color: #333;
+}
